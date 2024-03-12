@@ -1,0 +1,11 @@
+a {
+    color: inherit; /* Makes the link use the text color of its parent */
+    text-decoration: none; /* Removes underline from links */
+    background-color: transparent; /* Ensures no background color */
+}
+
+a:hover, a:focus {
+    color: #89CFF0; /* Optional: keeps the link color the same on hover/focus */
+    text-decoration: none; /* Removes text decoration on hover/focus */
+    background-color: transparent; /* Ensures no background change on hover/focus */
+}
