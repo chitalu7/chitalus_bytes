@@ -1,3 +1,47 @@
+/* Personally customize cards without affecting Bootstrap 'card' clas */
+.custom-card {
+    margin-top: 28px !important;
+}
+
+
+/* Center the footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100px;
+}
+
+/* .page-header {
+    cursor: none; Hide the default cursor */
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black; 
+} */
+
+/* #cursor {
+    position: fixed;
+    width: 24px;
+    height: 24px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; Ignore the cursor when interacting with other elements */
+    /* z-index: 1000;
+} */
+
+/* .hidden-text {
+    color: black;
+    font-size: 24px;
+    visibility: hidden;
+} */
+
+/* .page-header:hover .hidden-text {
+    visibility: visible;
+    color: white;
+} */
+
 a {
     color: inherit; /* Makes the link use the text color of its parent */
     text-decoration: none; /* Removes underline from links */
