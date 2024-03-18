@@ -1,9 +1,16 @@
 /* Personally customize cards without affecting Bootstrap 'card' clas */
 .custom-card {
-    margin-top: 28px !important;
-    background-color: black;
-    
+    margin-top: 36px !important;
+    background-color: black; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the card */
 }
+
+.custom-card:hover {
+    transform: scale(1.05); /* Scales up the card slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect for depth */
+  }
+
 
 .custom-card-body {
     color: white;
@@ -15,15 +22,21 @@
 
 .custom-img {
     background-color: black;
+    
+    border: 4px solid #007bff;;
+    
 }
+
 
 
 /* Center the footer */
 footer {
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-content: center;
-    height: 100px;
+    height: 80px;
+    
 }
 
 /* .page-header {
@@ -55,8 +68,9 @@ footer {
     visibility: visible;
     color: white;
 } */
-.custom-img {
-    height: 24rem;}
+/* .custom-img {
+    height: 4rem;
+} */
 
 
 a {
