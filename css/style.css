@@ -1,3 +1,31 @@
+.main-body-container {
+    margin-top: 20px;
+}
+
+.construction-emoji{
+    width: 36px;
+    vertical-align: middle;
+}
+
+#maintenance-banner-section {
+    text-align: center !important;
+    background-color: antiquewhite;
+    /* display: flex; */
+    /* align-items: center !important; */
+    gap: 10px;
+}
+
+.construction-emoji {
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin: 0px 10px;
+}
+
+#intro-section {
+    text-align: justify !important;
+}
+
 /* Personally customize cards without affecting Bootstrap 'card' clas */
 .custom-card {
     margin-top: 36px !important;
@@ -21,10 +49,13 @@
 }
 
 .custom-img {
-    background-color: black;
-    
-    border: 4px solid #007bff;;
-    
+    background-color: black;    
+    border: 4px solid #007bff;    
+}
+
+.align-svg-center {
+    vertical-align: middle; /* Adjusts the alignment of the SVG relative to the text */
+    transform: translateY(-2px); /* Moves the SVG upward by 2 pixels */
 }
 
 
@@ -80,7 +111,7 @@ a {
 }
 
 a:hover, a:focus {
-    color: #0d6efd; /* Optional: keeps the link color the same on hover/focus */
+    color: #007bff; /* Optional: keeps the link color the same on hover/focus */
     text-decoration: none; /* Removes text decoration on hover/focus */
     background-color: transparent; /* Ensures no background change on hover/focus */
 }
