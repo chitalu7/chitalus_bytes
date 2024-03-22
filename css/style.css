@@ -62,12 +62,11 @@
 
 /* Center the footer */
 footer {
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    height: 80px;
-    
+    margin-top: 20px;
+    /* justify-content: center;
+    align-content: center; */
+    float: right;  
+    clear: both;  
 }
 
 /* .page-header {
