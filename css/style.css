@@ -61,13 +61,17 @@
 
 
 /* Center the footer */
+
+
 footer {
     margin-top: 20px;
-    /* justify-content: center;
-    align-content: center; */
-    float: right;  
-    clear: both;  
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #333;
+    color: white;
+  }
 
 /* .page-header {
     cursor: none; Hide the default cursor */
