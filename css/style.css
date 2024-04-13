@@ -1,0 +1,116 @@
+.main-body-container {
+    margin-top: 20px;
+}
+
+.construction-emoji{
+    width: 36px;
+    vertical-align: middle;
+}
+
+#maintenance-banner-section {
+    text-align: center !important;
+    background-color: antiquewhite;
+    /* display: flex; */
+    /* align-items: center !important; */
+    gap: 10px;
+}
+
+.construction-emoji {
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin: 0px 10px;
+}
+
+#intro-section {
+    text-align: justify !important;
+}
+
+/* Personally customize cards without affecting Bootstrap 'card' clas */
+.custom-card {
+    margin-top: 24px !important;
+    background-color: black; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the card */
+}
+
+.custom-card:hover {
+    transform: scale(1.05); /* Scales up the card slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect for depth */
+  }
+
+
+.custom-card-body {
+    color: white;
+}
+
+.custom-header {
+    background-color: black;
+}
+
+.custom-img {
+    background-color: black;    
+    border: 4px solid #007bff;    
+}
+
+.align-svg-center {
+    vertical-align: middle; /* Adjusts the alignment of the SVG relative to the text */
+    transform: translateY(-2px); /* Moves the SVG upward by 2 pixels */
+}
+
+
+
+/* Center the footer */
+footer {
+    margin-top: 20px;
+    /* justify-content: center;
+    align-content: center; */
+    float: right;  
+    clear: both;  
+}
+
+/* .page-header {
+    cursor: none; Hide the default cursor */
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black; 
+} */
+
+/* #cursor {
+    position: fixed;
+    width: 24px;
+    height: 24px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; Ignore the cursor when interacting with other elements */
+    /* z-index: 1000;
+} */
+
+/* .hidden-text {
+    color: black;
+    font-size: 24px;
+    visibility: hidden;
+} */
+
+/* .page-header:hover .hidden-text {
+    visibility: visible;
+    color: white;
+} */
+/* .custom-img {
+    height: 4rem;
+} */
+
+
+a {
+    color: inherit; /* Makes the link use the text color of its parent */
+    text-decoration: none; /* Removes underline from links */
+    background-color: transparent; /* Ensures no background color */
+}
+
+a:hover, a:focus {
+    color: #007bff; /* Optional: keeps the link color the same on hover/focus */
+    text-decoration: none; /* Removes text decoration on hover/focus */
+    background-color: transparent; /* Ensures no background change on hover/focus */
+}
