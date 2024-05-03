@@ -2,6 +2,25 @@
     margin-top: 20px;
 }
 
+#intro-section {
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+#intro-section h3 {
+    color: #0056b3; /* A shade of blue for headers */
+    margin-bottom: 10px;
+}
+
+#intro-section p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+
 .construction-emoji{
     width: 36px;
     vertical-align: middle;
@@ -10,8 +29,6 @@
 #maintenance-banner-section {
     text-align: center !important;
     background-color: antiquewhite;
-    /* display: flex; */
-    /* align-items: center !important; */
     gap: 10px;
 }
 
