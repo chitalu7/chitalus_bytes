@@ -1,0 +1,210 @@
+/* Resetting default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the body and html take up the full viewport height */
+html, body {
+    height: 100%; /* Full viewport height */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Flexbox for vertical layout */
+}
+
+/* Light and Dark Theme Support */
+body.light-theme {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+body.dark-theme {
+    background-color: #181818;
+    color: #f4f4f9;
+}
+
+/* About Me Section */
+.about-me {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Theme - About Me */
+body.light-theme .about-me {
+    background-color: #f0f0f5; /* Light background */
+    color: #333; /* Dark text */
+}
+
+/* Dark Theme - About Me */
+body.dark-theme .about-me {
+    background-color: #333; /* Dark background */
+    color: #f0f0f5; /* Light text */
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 20px; /* Spacing between links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.nav-link:hover {
+    color: #ffd700; /* Change to a gold color on hover */
+}
+
+/* Make the main content area grow to fill the available space */
+main {
+    flex: 1;  /* Grow to fill the available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Project Grid Layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 40px;
+    margin: 0 auto; /* Ensures grid stays centered */
+    margin-bottom: 40px;
+}
+
+/* Project Card */
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ensure content doesn't overflow card */
+    display: flex; /* Flexbox layout for content positioning */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Ensure buttons stay at the bottom */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Image */
+.project-image {
+    width: 100%; /* Full width inside the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+/* Project Title */
+.project-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+/* Project Description */
+.project-description {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Technologies Used */
+.project-tech {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Container for the project links (buttons) */
+.project-links {
+    display: flex;
+    gap: 15px; /* Space between the buttons */
+    margin-top: auto; /* Pushes the buttons to the bottom */
+    align-self: flex-start; /* Align buttons to the left */
+}
+
+/* Styling for the project link buttons */
+.project-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.project-link-btn:hover {
+    background-color: #0056b3;
+}
+
+/* SVG Icons inside the buttons */
+.project-link-btn svg {
+    fill: currentColor; /* Makes the SVG icon color match the text color */
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Ensures footer is pushed to the bottom */
+    width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .projects-grid {
+        padding: 0 20px; /* Reduced padding for mobile */
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        margin: 0 10px; /* Reduce space between links on smaller screens */
+        font-size: 1rem; /* Slightly smaller text for mobile */
+    }
+
+    /* Stack the buttons vertically on smaller screens */
+    .project-links {
+        flex-direction: column;
+        gap: 10px; /* Smaller gap between the stacked buttons */
+    }
+}

@@ -1,0 +1,61 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Countdown container styling */
+.countdown-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #181818; /* Dark theme background */
+    color: #f4f4f9; /* Light theme text */
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+/* Title styling */
+.countdown-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Countdown display styling */
+#countdown {
+    font-size: 2rem;
+    display: flex;
+    gap: 10px;
+}
+
+/* Individual time units styling */
+#countdown span {
+    background-color: #007bff; /* Blue background for the digits */
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .countdown-container h1 {
+        font-size: 2rem;
+    }
+    #countdown {
+        font-size: 1.5rem;
+    }
+}
+
+/* Styling for the countdown */
+#maintenance-banner-section #days, 
+#maintenance-banner-section #hours, 
+#maintenance-banner-section #minutes, 
+#maintenance-banner-section #seconds {
+    font-weight: bold;  /* Make the countdown numbers bold */
+    color: #007bff;     /* Make the text blue */
+    margin: 0 5px;      /* Add some space between the units */
+}
+
