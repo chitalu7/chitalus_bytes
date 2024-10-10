@@ -208,3 +208,31 @@ footer {
         gap: 10px; /* Smaller gap between the stacked buttons */
     }
 }
+
+/* Custom styles for the Tech Fortress link visibility */
+
+/* Light Theme - Tech Fortress Link */
+body.light-theme #tech-fortress-link {
+    color: #007bff; /* Standard blue color */
+}
+
+body.light-theme #tech-fortress-link:hover {
+    color: #0056b3; /* Darker blue on hover for light theme */
+}
+
+/* Dark Theme - Tech Fortress Link */
+body.dark-theme #tech-fortress-link {
+    color: #4da8ff; /* Lighter blue for visibility in dark theme */
+}
+
+body.dark-theme #tech-fortress-link:hover {
+    color: #80caff; /* Lighter blue on hover in dark theme */
+}
+
+
+/* Styling for the project year */
+.project-year {
+    font-size: 1rem;
+    color: #666; /* Slightly subdued color */
+    margin-bottom: 10px; /* Space between the year and the description */
+}

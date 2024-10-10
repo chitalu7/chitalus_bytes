@@ -37,6 +37,42 @@ header {
     padding: 20px;
 }
 
+/* Introduction Section Styles */
+.intro {
+    max-width: 800px;
+    text-align: center;
+    margin: 20px auto 40px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+/* Light Theme - Intro Text and Background */
+body.light-theme .intro {
+    background-color: #f0f0f5; /* Light background */
+    color: #333; /* Dark text */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Dark Theme - Intro Text and Background */
+body.dark-theme .intro {
+    background-color: #333; /* Dark background */
+    color: #f0f0f5; /* Light text */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Highlight important terms */
+.intro strong {
+    color: #007bff;  /* Same for both themes */
+}
+
+.intro p {
+    margin-bottom: 20px;
+}
+
 /* Theme Toggle Styles */
 .theme-toggle input[type="checkbox"] {
     display: none;
