@@ -90,6 +90,19 @@ body.dark-theme .intro {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and theme text */
+    color: inherit; /* Inherits current theme color */
+}
+
+#theme-text {
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+
 /* Light Theme Toggle Button (Moon Icon) */
 body.light-theme .theme-toggle label {
     background-color: #838383; /* Slightly darker background */
