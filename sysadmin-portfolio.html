@@ -11,6 +11,12 @@
 
     <!-- Custom CSS for styling -->
     <link rel="stylesheet" href="css/sysadmin-portfolio.css">
+    <!-- SimpleLightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.0/simple-lightbox.min.css">
+
+    <!-- SimpleLightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.0/simple-lightbox.min.js"></script>
+
 </head>
 <body class="light-theme">
 
@@ -22,52 +28,163 @@
         </nav>
     </header>
 
-    <!-- Main Content: IT Specialist -->
-    <main class="container">
-        <h1 class="page-title" data-aos="fade-up">Tech Fortress</h1>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1 class="hero-title">Tech Fortress</h1>
+            <p class="hero-tagline">My IT Odyssey</p>
+            <p class="hero-description">
+                Constantly learning & evolving and expanding my expertise in IT, driven by a passion for learning and problem-solving.
+            </p>
+            <a href="#skills" class="scroll-down" id="scroll-button">
+                <span>&#8595;</span>
+            </a>
+        </div>
+    </section>
 
-        <!-- Introduction Section -->
-        <section class="summary" data-aos="fade-up" data-aos-delay="100">
+    <!-- Placeholder for next sections (Initially hidden) -->
+    <main id="skills" class="hidden">
+
+        <!-- Interactive Skills Section -->
+        <section class="skills-grid" id="skills">
+            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+            <div class="skills-container">
+                <!-- Skill Card 1 -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Cybersecurity</h3>
+                    <div class="skill-description">
+                        <p>Network Security, Vulnerability Management, Firewalls, Encryption</p>
+                    </div>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>System Optimization</h3>
+                    <div class="skill-description">
+                        <p>Process Automation, Device Management, System Upgrades</p>
+                    </div>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>System Administration</h3>
+                    <div class="skill-description">
+                        <p>Windows Servers, Linux Servers, Active Directory</p>
+                    </div>
+                </div>
+                <!-- Skill Card 4 -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Cloud Platforms</h3>
+                    <div class="skill-description">
+                        <p>AWS, Azure, Clound Migration</p>
+                    </div>
+                </div>
+                <!-- Add more skill cards as needed -->
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+            <section class="experience-section" id="experience">
+                <h2 class="section-title" data-aos="fade-up">Professional Experience</h2>
+                <div class="experience-container">
+            
+                <!-- Job 1 -->
+                <div class="job-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>System & Network Administrator / IT Consultant</h3>
+                    <h4>ETAN Industries - WSDOT | Renton, WA (2021 - Present)</h4>
+                    <ul class="job-responsibilities">
+                    <li>Designed and implemented security protocols, reducing cybersecurity risks by 30%.</li>
+                    <li>Conducted security audits and optimized IT infrastructure, increasing operational efficiency by 25%.</li>
+                    <li>Prepared for SOC 2 audits, establishing controls to meet security criteria.</li>
+                    <li>Conducted research on Azure VMs for cloud migration, optimizing performance and reducing costs by 10%.</li>
+                    <li>Automated system administration tasks, reducing manual workload by 40%.</li>
+                    </ul>
+                </div>
+            
+                <!-- Job 2 -->
+                <div class="job-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>IT Consultant / DevOps</h3>
+                    <h4>Noviimansa | Seattle, WA (2017 - Present)</h4>
+                    <ul class="job-responsibilities">
+                    <li>Consulted on IT infrastructure optimization, improving operational efficiency and security.</li>
+                    <li>Developed automation scripts to reduce human error in routine tasks.</li>
+                    <li>Established security policies for long-term sustainability, ensuring compliance with industry standards.</li>
+                    </ul>
+                </div>
+            
+                <!-- Job 3 -->
+                <div class="job-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>ASG Technological & Entrepreneurial Representative</h3>
+                    <h4>Bellevue College | Bellevue, WA (2018 - 2019)</h4>
+                    <ul class="job-responsibilities">
+                    <li>Led system upgrades and customizations, improving device management and overall productivity.</li>
+                    <li>Developed and executed staff training programs for secure and effective IT use.</li>
+                    </ul>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="job-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3> IT Support </h3>
+                    <h4>Boys & Girls Club Bellevue | Bellevue, WA (2020 - 2021)</h4>
+                    <ul class="job-responsibilities">
+                        <li>Imaged and deployed Windows laptops for patrons and staff, standardizing setup and reducing deployment time by 30%.</li>
+                        <li>Provided hardware and software support for over 50 users.</li>
+                        <li>Aligned service desk operations with organizational goals.</li>
+                    </ul>
+                </div>
+                
+                </div>
+            </section>
+
+             <!-- Note about Code Chronicles -->
+        <section class="code-chronicles-note" data-aos="fade-up">
             <p>
-                Welcome to <strong>Tech Fortress</strong>, a collection of my IT systems and network management projects focused on optimization, security, and automation.
-                Discover how I ensure efficient and secure operations for organizations.<br><br>
-                Want to see more of my development work?<br>
-                Head over to the <a href="dev-portfolio.html" id="code-chronicles-link"><strong>Code Chronicles</strong></a>.
+                Interested in learning more about my journey? Be sure to check out <a href="dev-portfolio.html" target="_blank">Code Chronicles</a> for insights and stories from my coding adventures.
             </p>
         </section>
-        
-        <!-- <section class="summary" data-aos="fade-up" data-aos-delay="100">
-            <p>
-                Welcome to <strong>Tech Fortress</strong>—a showcase of my skills and expertise in IT systems, infrastructure, and network management.
-                Here, you'll find a range of projects and solutions that focus on optimizing IT environments, improving security, and automating processes.
-                My work spans system administration, cloud platforms, and network troubleshooting to help organizations achieve seamless, secure, and efficient operations.<br>
-                If you're also interested in software development and want to see more of my work, head over to my <a href="dev-portfolio.html" id="code-chronicles-link"><strong>Code Chronicles</strong></a>, where I focus on web applications, system automation, and more. 
-                Explore both portfolios to gain insight into my journey and my approach to solving complex technical challenges.
-            </p>
-        </section> -->
+
+            
+           
+
     </main>
 
+
+   
+
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Noviimansa. All rights reserved.</p>
+    </div>
+</footer>
+
 
     <!-- AOS JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>AOS.init();</script>
+    <script>
+        AOS.init();
+    </script>
 
-    <!-- Custom JavaScript for theme toggle -->
+    <!-- Custom JavaScript for theme toggle and scroll-to-section behavior -->
     <script src="js/theme-toggle.js"></script>
 
+    <!-- Scroll-to-section and reveal logic -->
     <script>
-        // Initialize the theme from localStorage (to retain user's preference)
-        document.addEventListener("DOMContentLoaded", function () {
-            const currentTheme = localStorage.getItem('theme');
-            if (currentTheme) {
-                document.body.classList.remove('light-theme', 'dark-theme');
-                document.body.classList.add(currentTheme);
-            }
+        document.getElementById('scroll-button').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the default anchor behavior
+            document.getElementById('skills').classList.remove('hidden');  // Reveal the section
+            document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });  // Smooth scroll
         });
     </script>
+
+    <script>
+        // Initialize SimpleLightbox for the work-card images
+        document.addEventListener("DOMContentLoaded", function () {
+            var lightbox = new SimpleLightbox('.work-card', {
+                captions: true,          // Enable captions
+                captionsData: 'alt',      // Use alt text for captions
+                captionDelay: 250,        // Delay in ms
+            });
+        });
+    </script>
+
 </body>
 </html>

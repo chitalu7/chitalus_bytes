@@ -24,31 +24,6 @@ body.dark-theme {
     color: #f4f4f9;
 }
 
-/* Introduction Section (Summary) for Tech Fortress */
-.summary {
-    max-width: 800px;
-    margin: 0 auto; /* Ensures it's centered horizontally */
-    text-align: center; /* Center the text content */
-    margin-bottom: 40px;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    padding: 20px;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Light Theme - Summary */
-body.light-theme .summary {
-    background-color: #f0f0f5; /* Light background */
-    color: #333; /* Dark text */
-}
-
-/* Dark Theme - Summary */
-body.dark-theme .summary {
-    background-color: #333; /* Dark background */
-    color: #f0f0f5; /* Light text */
-}
-
 /* Navigation Bar Styles */
 .navbar {
     background-color: #007bff;
@@ -59,7 +34,7 @@ body.dark-theme .summary {
 }
 
 body.dark-theme .navbar {
-    background-color: #0056b3; /* Darker blue for dark theme */
+    background-color: #0056b3;
 }
 
 .nav-link {
@@ -74,51 +49,347 @@ body.dark-theme .navbar {
     color: #ffd700;
 }
 
-/* Main Content */
-main {
-    flex: 1;
+/* Hero Section - Fullscreen */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/servers-01.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
     padding: 20px;
 }
 
-/* Page Title */
-.page-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-/* Footer */
+.hero-tagline {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Scroll Down Button */
+.scroll-down {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.scroll-down:hover {
+    transform: translateY(10px);
+}
+
+.scroll-down span {
+    display: inline-block;
+    animation: bounce 1s infinite;
+}
+
+/* Bounce animation for the down arrow */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Hiding the main content initially */
+.hidden {
+    display: none;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-tagline {
+        font-size: 1.2rem;
+    }
+    .hero-description {
+        font-size: 1rem;
+    }
+}
+
+/* Skills Section Styling */
+.skills-grid {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Grid Layout for Skill Cards */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Skill Card Styling */
+.skill-card {
+    background-color: #fff; /* Light theme card background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+body.light-theme .skill-card {
+    background-color: #fff; /* Light theme card background */
+    color: #333; /* Darker text for light theme */
+}
+
+body.dark-theme .skill-card {
+    background-color: #333; /* Dark theme card background */
+    color: #f4f4f9; /* Lighter text for dark theme */
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+body.light-theme .skill-card h3 {
+    color: #007bff; /* Dark blue for title in light theme */
+}
+
+body.dark-theme .skill-card h3 {
+    color: #80caff; /* Light blue for title in dark theme */
+}
+
+.skill-card .skill-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+body.light-theme .skill-card .skill-description {
+    color: #555; /* Darker text for description in light theme */
+}
+
+body.dark-theme .skill-card .skill-description {
+    color: #f4f4f9; /* Lighter text for description in dark theme */
+}
+
+/* Skill Card Hover Effect */
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #007bff; /* Highlight color on hover */
+    color: white; /* Change all text to white on hover */
+}
+
+.skill-card:hover h3,
+.skill-card:hover .skill-description {
+    color: white; /* Ensure text is visible on hover */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer Styles */
 footer {
     background-color: #007bff;
     color: white;
     text-align: center;
     padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
 }
 
 body.dark-theme footer {
-    background-color: #0056b3; /* Darker for dark mode */
+    background-color: #0056b3; /* Darker footer color for dark theme */
 }
 
-/* Link styling for the Code Chronicles link */
-body.light-theme #code-chronicles-link {
-    color: #007bff; /* Standard blue for links in light theme */
-}
 
-body.light-theme #code-chronicles-link:hover {
-    color: #0056b3; /* Darker blue on hover for light theme */
-}
-
-body.dark-theme #code-chronicles-link {
-    color: #4da8ff; /* Light blue for better contrast in dark theme */
-}
-
-body.dark-theme #code-chronicles-link:hover {
-    color: #80caff; /* Slightly lighter blue on hover in dark theme */
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: 1fr;
+/* Experience Section Styling */
+.experience-section {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .experience-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .job-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .job-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007bff; /* Highlighted title */
+  }
+  
+  .job-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #666;
+  }
+  
+  .job-responsibilities {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #333;
+  }
+  
+  .job-responsibilities li {
+    margin-bottom: 10px;
+  }
+  
+  /* Dark Mode - Experience Section */
+  body.dark-theme .job-card {
+    background-color: #333;
+    color: #f0f0f5;
+  }
+  
+  body.dark-theme .job-card h3 {
+    color: #4da8ff;
+  }
+  
+  body.dark-theme .job-card h4 {
+    color: #aaa;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .experience-container {
+      grid-template-columns: 1fr; /* Single column layout on small screens */
     }
+  }
+
+  /* Job Card Styling for Light Theme */
+body.light-theme .job-card {
+    background-color: #fff; /* Light background for job card */
+    color: #333; /* Dark text for light theme */
+}
+
+body.light-theme .job-card h3 {
+    color: #007bff; /* Dark blue for job title in light theme */
+}
+
+body.light-theme .job-card h4 {
+    color: #666; /* Dark gray for job subtitle in light theme */
+}
+
+body.light-theme .job-responsibilities {
+    color: #333; /* Dark text for responsibilities list */
+}
+
+/* Job Card Styling for Dark Theme */
+body.dark-theme .job-card {
+    background-color: #333; /* Dark background for job card */
+    color: #f4f4f9; /* Light text for dark theme */
+}
+
+body.dark-theme .job-card h3 {
+    color: #4da8ff; /* Light blue for job title in dark theme */
+}
+
+body.dark-theme .job-card h4 {
+    color: #aaa; /* Light gray for job subtitle in dark theme */
+}
+
+body.dark-theme .job-responsibilities {
+    color: #f4f4f9; /* Light text for responsibilities list in dark theme */
+}
+
+/* Hover Effect for Job Cards */
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #007bff; /* Highlight background color on hover */
+    color: inherit; /* Keep text color the same on hover */
+}
+
+/* Ensure text colors remain unchanged on hover */
+.job-card:hover h3, 
+.job-card:hover h4,
+.job-card:hover .job-responsibilities {
+    color: inherit; /* Keep original color on hover */
+}
+
+/* Code Chronicles Note Styling */
+.code-chronicles-note {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f9; /* Light background */
+    color: #333;
+}
+
+.code-chronicles-note a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.code-chronicles-note a:hover {
+    color: #0056b3; /* Darker shade on hover */
 }
