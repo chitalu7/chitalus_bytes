@@ -24,6 +24,69 @@ body.dark-theme {
     color: #f4f4f9;
 }
 
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #007bff;
+    display: flex;
+    justify-content: center; /* Center the nav links container */
+    align-items: center;
+    position: relative; /* Needed for absolute positioning of brand link */
+    padding: 15px 20px;
+}
+
+body.dark-theme .navbar {
+    background-color: #0056b3;
+}
+
+/* Style for Chitalu's Bytes brand link */
+.brand-link {
+    position: absolute;
+    left: 20px; /* Align to the far left with some padding */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Center the nav links container */
+.nav-links-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Styles for navigation links */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffd700;
+}
+
+/* Style for Chitalu's Bytes brand link */
+.brand-link {
+    position: absolute;
+    left: 20px; /* Align to the far left with some padding */
+    display: flex;
+    align-items: center; /* Aligns text and image vertically */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Style for the brand logo */
+.brand-logo {
+    height: 24px; /* Adjust height as needed */
+    margin-right: 8px; /* Space between logo and text */
+}
+
+
+
 /* About Me Section */
 .about-me {
     max-width: 800px;
@@ -48,26 +111,10 @@ body.dark-theme .about-me {
     color: #f0f0f5; /* Light text */
 }
 
-/* Navigation Bar Styles */
-.navbar {
-    background-color: #007bff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
-}
 
-.nav-link {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin: 0 20px; /* Spacing between links */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
-}
 
-.nav-link:hover {
-    color: #ffd700; /* Change to a gold color on hover */
-}
+
+
 
 /* Make the main content area grow to fill the available space */
 main {

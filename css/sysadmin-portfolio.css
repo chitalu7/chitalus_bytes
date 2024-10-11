@@ -24,30 +24,70 @@ body.dark-theme {
     color: #f4f4f9;
 }
 
+
 /* Navigation Bar Styles */
 .navbar {
     background-color: #007bff;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the nav links container */
     align-items: center;
-    padding: 15px 0;
+    position: relative; /* Needed for absolute positioning of brand link */
+    padding: 15px 20px;
 }
 
 body.dark-theme .navbar {
     background-color: #0056b3;
 }
 
+/* Style for Chitalu's Bytes brand link */
+.brand-link {
+    position: absolute;
+    left: 20px; /* Align to the far left with some padding */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Center the nav links container */
+.nav-links-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Styles for navigation links */
 .nav-link {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
-    margin: 0 20px;
+    font-size: 1.75rem;
     transition: color 0.3s ease;
 }
 
 .nav-link:hover {
     color: #ffd700;
 }
+
+/* Style for Chitalu's Bytes brand link */
+.brand-link {
+    position: absolute;
+    left: 20px; /* Align to the far left with some padding */
+    display: flex;
+    align-items: center; /* Aligns text and image vertically */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Style for the brand logo */
+.brand-logo {
+    height: 24px; /* Adjust height as needed */
+    margin-right: 8px; /* Space between logo and text */
+}
+
+
+
+
 
 /* Hero Section - Fullscreen */
 .hero {
