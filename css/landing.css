@@ -119,7 +119,7 @@ body.dark-theme .theme-toggle label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Changed from height: 100vh to min-height */
+    min-height: 80vh; /* Changed from height: 100vh to min-height */
     text-align: center;
     padding: 0 20px;
 }
@@ -153,23 +153,13 @@ body.dark-theme .theme-toggle label {
     min-width: 220px; /* Minimum width */
     height: 60px;     /* Fixed height */
     text-align: center;
+    font-size: larger;
 }
 
 .button:hover {
     background-color: #0056b3;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -186,5 +176,26 @@ body.dark-theme .theme-toggle label {
     .site-title {
         font-size: 2rem;
     }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;  /* Center the text inside the footer */
+    padding: 20px;
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    display: flex;        /* Use flexbox for centering */
+    justify-content: center;  /* Horizontally center the content */
+    align-items: center;   /* Vertically center the content (if needed) */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center; /* Ensure the text is centered */
 }
 
