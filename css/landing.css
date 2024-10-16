@@ -5,11 +5,11 @@
     box-sizing: border-box;
 }
 
-/* Prevent scrolling */
+/* Allow scrolling */
 html, body {
     height: 100%;
     margin: 0;
-    overflow: hidden; /* Disable scrolling */
+    overflow-x: hidden; /* Allow vertical scrolling but prevent horizontal scrolling */
 }
 
 /* Base Styles */
@@ -44,8 +44,7 @@ header {
     margin: 20px auto 40px;
     font-size: 1.2rem;
     line-height: 1.6;
-    transition: color 0.3s ease;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 /* Light Theme - Intro Text and Background */
@@ -93,15 +92,14 @@ body.dark-theme .intro {
 .theme-toggle {
     display: flex;
     align-items: center;
-    gap: 8px; /* Space between icon and theme text */
-    color: inherit; /* Inherits current theme color */
+    gap: 8px;
+    color: inherit; /* Inherit theme color */
 }
 
 #theme-text {
     font-size: 1rem;
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    transition: color 0.3s ease;
 }
-
 
 /* Light Theme Toggle Button (Moon Icon) */
 body.light-theme .theme-toggle label {
@@ -121,7 +119,7 @@ body.dark-theme .theme-toggle label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    min-height: 100vh; /* Changed from height: 100vh to min-height */
     text-align: center;
     padding: 0 20px;
 }
@@ -137,6 +135,8 @@ body.dark-theme .theme-toggle label {
 .buttons {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+    justify-content: center; /* Center the buttons */
 }
 
 .button {
@@ -150,8 +150,6 @@ body.dark-theme .theme-toggle label {
     font-size: 1rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-
-    /* Ensure equal dimensions for both buttons */
     min-width: 220px; /* Minimum width */
     height: 60px;     /* Fixed height */
     text-align: center;
@@ -189,3 +187,4 @@ body.dark-theme .theme-toggle label {
         font-size: 2rem;
     }
 }
+
